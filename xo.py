@@ -36,9 +36,19 @@ class Solution:
     def count_XO(self, string):
             #type string: string
             #return type: boolean
-            
-            #TODO: Write code below to returnn a boolean value with the solution to the prompt.
-            pass
+            x_counter = 0
+            o_counter = 0
+            for i in string:
+                if i == "X":
+                    x_counter += 1
+                elif i == "O":
+                    o_counter += 1
+                else:
+                     continue
+            if x_counter == o_counter:
+                 return True
+            else:
+                 return False
                 
 def main():
     input1=input()
